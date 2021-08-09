@@ -25,18 +25,6 @@ html {
 }
 
 /* responsite */
-.grid {
-    width: 1275px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -8px;
-    margin-right: -8px;
-}
 
 .grid__col-20 {
     padding-left: 8px;
@@ -120,4 +108,23 @@ html {
 .descr-auth {
     color: #222;
     font-weight: 600;
+}
+
+/* List content */
+
+.content__list {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+}
+
+.content__list::-webkit-scrollbar {
+    display: none;
+}
+
+.content__item {
+    flex-shrink: 0;
+    display: block;
 }

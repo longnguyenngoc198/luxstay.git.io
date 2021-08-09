@@ -1,3 +1,6 @@
+.main {
+    overflow: hidden;
+}
 .header {
     height: 80px;
     /* padding: 5px 0; */
@@ -23,6 +26,7 @@
     justify-content: space-between;
 }
 .header-with-search {
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -32,8 +36,7 @@
 
 .header-logo__link {
     text-decoration: none;
-    width: 70px;
-    height: 70px;
+    height: 100%;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -47,6 +50,16 @@
     transition-duration: 0.3s;
     transition-delay: 0.2s;
 }
+
+.header-logo__mobile {
+    display: block;
+}
+
+.header-logo__mobile-icon {
+    width: 200px;
+    margin-left: 16px;
+}
+
 .header-logo__icon:hover {
     fill: #f65e39;
 }
@@ -55,7 +68,7 @@
     display: flex;
     align-items: center;
     margin-left: 15px;
-    height: 47px;
+    height: 100%;
     background-color: var(--while-color);
     box-shadow: 1px 1px 4px rgb(0 0 0 / 20%);
     border-radius: 5px;
@@ -66,7 +79,8 @@
 }
 
 .header-search__input {
-    width: 263px;
+    /* width: 263px; */
+    flex: 1;
     height: 100%;
     padding: 10px 0px 10px 16px;
     outline: none;
@@ -105,11 +119,26 @@
     align-items: center;
 }
 
+/* moblet-menu */
+.header__moblet-menu {
+    position: relative;
+    display: none;
+}
+.header__moblet-menu-checked {
+
+}
+.header__moblet-menu-icon {
+    font-size: 3.6rem;
+    position: relative;
+    top: 4px;
+    color: var(--text-color);
+}
+
 /* meunu */
 .header-menu {
-    
+    width: 100%;
     display: flex;
-    
+    justify-content: flex-end;
 }
 
 .header-menu__list {
@@ -156,9 +185,10 @@
 /* slider */
 .slider {
     margin: 125px 0 57px;
-    height: 283px;
-    overflow: hidden;
+    height: 100%;
+    /* overflow: hidden; */
 }
+
 
 .slide {
     display: block;
@@ -227,6 +257,11 @@
 
 /* container */
 
+
+
+
+
+
 /* out-standing */
 .out-standing {
     margin-top: 42px;
@@ -242,6 +277,7 @@
 
 .out-standing-place__link {
     display: block;
+    width: 100%;
     text-decoration: none;
     position: relative;
     padding: 16px 0;
@@ -295,10 +331,13 @@
 
 .benefit-event {
     margin-top: 16px;
+    width: 100%;
 }
 
 .benefit-event__link {
     text-decoration: none;
+    display: block;
+    width: 100%;
 }
 
 .benefit-event__img {
@@ -354,6 +393,8 @@
 
 .user-manual__link {
     text-decoration: none;
+    display: block;
+    width: 100%;
 }
 
 .user-manual__img {
