@@ -52,7 +52,7 @@
 }
 
 .header-logo__mobile {
-    display: block;
+    display: none;
 }
 
 .header-logo__mobile-icon {

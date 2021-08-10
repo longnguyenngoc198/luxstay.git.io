@@ -43,6 +43,17 @@
     .main {
         padding: 0 8px;
     }
+
+    .imtroduce__logo {
+        display: none;
+    }
+
+    .introduce__heading {
+        font-size: 2rem;
+    }
+    .introduce__text {
+        text-align: justify;
+    }
 }
 
 /* tablet */
