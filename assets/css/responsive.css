@@ -19,6 +19,9 @@
         margin-top: 24px;
         text-align: center;
     }
+    .imtroduce__logo {
+        display: none;
+    }
 }
 
 /* mobile */
@@ -44,9 +47,7 @@
         padding: 0 8px;
     }
 
-    .imtroduce__logo {
-        display: none;
-    }
+    
 
     .introduce__heading {
         font-size: 2rem;
